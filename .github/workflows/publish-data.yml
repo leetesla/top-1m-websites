@@ -31,5 +31,6 @@ jobs:
             echo 'Dataset unchanged'
           else
             git commit -m 'data: publish filtered October 2026 top websites [skip ci]'
+            git pull --rebase origin main
             git push
           fi
